@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.theme {
+  color: white;
+  background-color: #7f53a7;
+}
+
+.theme-alt {
+  color: #7f53a7;
+  background-color: white;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  margin: 0 auto;
+}
