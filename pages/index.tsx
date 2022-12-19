@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <button onClick={handleLogout}>Logout</button>
       </div>
       <Link
-        href={"/dashboard"}
+        href={"/play"}
         className="theme-alt font-semibold hover:theme-hover text-white py-2 px-6 rounded-2xl focus:outline-none focus:shadow-outline"
       >
         Start
