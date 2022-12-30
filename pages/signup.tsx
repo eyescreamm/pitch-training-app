@@ -26,14 +26,12 @@ const signup = () => {
   const signup = async (email: string, password: string) => {
     try {
       setIsProcessingSignup(true);
-      console.log("signup関数");
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
         password
       );
       setIsProcessingSignup(false);
-      console.log("ユーザ登録成功");
     } catch (e) {
       console.error(e);
     }
@@ -46,7 +44,6 @@ const signup = () => {
   }) => {
     if (password === confirmationPassword) {
       signup(email, password);
-      console.log("passの一致確認");
     } else {
       alert("パスワードが一致しません");
     }
@@ -61,7 +58,7 @@ const signup = () => {
       <div className="flex w-2/3 rounded-2xl shadow-2xl max-w-4xl">
         <form className="theme-alt bg-white w-3/5 px-20 pt-6 pb-8 mb-4">
           <div className="py-5">
-            <p className="font-bold pb-2 text-2xl">Create your account!</p>
+            <p className="font-bold pb-2 text-2xl">Create your account</p>
             <div className="theme line"></div>
           </div>
           <div className="mb-4">
@@ -105,7 +102,7 @@ const signup = () => {
         </form>
         <div className="w-2/5 py-20 theme rounded-tr-2xl rounded-br-2xl">
           <div className="pb-5 pt-16">
-            <p className="font-bold pb-2 text-2xl">Welocome my friend!</p>
+            <p className="font-bold pb-2 text-2xl">Welocome my friend</p>
             <div className="theme-alt line"></div>
           </div>
           <div className="px-12">
