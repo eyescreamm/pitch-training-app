@@ -49,7 +49,7 @@ const login = () => {
       <div className="flex w-2/3 rounded-2xl shadow-2xl max-w-4xl">
         <form className="theme-alt bg-white w-3/5 px-20 pt-6 pb-8 mb-4">
           <div className="py-5">
-            <p className="font-bold pb-2 text-2xl">Please login!</p>
+            <p className="font-bold pb-2 text-2xl">Please login</p>
             <div className="theme line"></div>
           </div>
           <div className="mb-4">
@@ -82,7 +82,7 @@ const login = () => {
         </form>
         <div className="w-2/5 py-20 theme rounded-tr-2xl rounded-br-2xl">
           <div className="pb-5 pt-8">
-            <p className="font-bold pb-2 text-2xl">Let's start!</p>
+            <p className="font-bold pb-2 text-2xl">Let's start</p>
             <div className="theme-alt line"></div>
           </div>
           <div className="px-12">
