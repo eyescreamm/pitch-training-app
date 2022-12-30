@@ -9,6 +9,7 @@ import React, {
   useState,
 } from "react";
 import { useAuth } from "../hooks/firebase";
+import Header from "./components/Header";
 
 export type UserType = User | null;
 
@@ -38,9 +39,6 @@ export const AuthProvider = ({ children }: AuthProps) => {
     user,
   };
 
-  console.log(router.pathname);
-  console.log(isAvailableForViewing);
-
   useEffect(() => {
     const authStateChanged = onAuthStateChanged(auth, async (user) => {
       setUser(user);
@@ -51,5 +49,10 @@ export const AuthProvider = ({ children }: AuthProps) => {
     };
   }, []);
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={value}>
+      {user && <Header />}
+      {children}
+    </AuthContext.Provider>
+  );
 };
