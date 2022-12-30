@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+header {
+  background-color: #d3d3d3;
+}
+
 .theme {
   color: white;
   background-color: #7f53a7;
@@ -21,8 +25,7 @@
 .key-text {
   position: relative;
   color: black;
-  font-weight: 600;
-  font-size: 36px;
+  font-size: 20px;
   margin-top: 240px;
   pointer-events: none;
 }
@@ -72,4 +75,61 @@
 .piano {
   display: flex;
   flex-direction: row;
+}
+
+.menu {
+  background-color: #2f4f4f;
+  border-radius: 10px;
+}
+
+/* ボタンデザイン */
+
+.home {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.home:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+.setting {
+  background-color: #ff4500;
+  border-radius: 10px;
+  color: black;
+}
+
+.setting:hover {
+  background-color: #ff7846;
+}
+
+.play-btn {
+  background-color: #696969;
+}
+
+.menu-wrap {
+  height: 60px;
+}
+
+.menu-border {
+  background-color: #2f4f4f;
+  border: 2px solid #008080;
+  border-radius: 10px;
+  color: #008080
+}
+
+.menu-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.play:hover {
+  background-color: #008080;
+  color: #2f4f4f;
 }
