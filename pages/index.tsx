@@ -8,22 +8,12 @@ import React from "react";
 import { useAuth } from "../hooks/firebase";
 
 const Home: NextPage = () => {
-  const router = useRouter();
-  const auth = useAuth();
-  const handleLogout = async () => {
-    await signOut(auth);
-    await router.push("/login");
-  };
-
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>***</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <button onClick={handleLogout}>Logout</button>
-      </div>
       <Link
         href={"/play"}
         className="theme-alt font-semibold hover:theme-hover text-white py-2 px-6 rounded-2xl focus:outline-none focus:shadow-outline"
